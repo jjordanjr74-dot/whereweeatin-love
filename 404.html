@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where We Eatin'? — redirecting</title>
+<meta name="robots" content="noindex">
+<!-- Serves for ANY path on this hostname, so a deep link like /radar or /list-your-truck also lands on the real
+     site instead of a 404. The path is preserved by the script below. -->
+<meta http-equiv="refresh" content="0; url=https://whereeatin.com/">
+<script>location.replace("https://whereeatin.com" + location.pathname + location.search + location.hash);</script>
+</head>
+<body style="font-family:system-ui,sans-serif;background:#111;color:#eee;display:grid;place-items:center;height:100vh;margin:0">
+  <main style="text-align:center;padding:2rem">
+    <p style="margin:0 0 1rem;opacity:.8">Sending you to the real site&hellip;</p>
+    <p style="margin:0"><a href="https://whereeatin.com/" style="color:#7dd3fc">whereeatin.com &rarr;</a></p>
+  </main>
+</body>
+</html>
